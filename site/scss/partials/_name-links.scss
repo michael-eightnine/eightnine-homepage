@@ -1,0 +1,45 @@
+.name-container {
+	text-align: center;
+	padding: 20px;
+	white-space: nowrap;
+
+	a {
+		display: inline-block;
+		font-family: Libre Baskerville;
+		text-align: center;
+		color: black;
+		font-size: 14px;
+		text-decoration: none;
+		text-transform: lowercase;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.name-divider:before {
+		content: '\2022';
+		font-size: 14px;
+		margin: 0 4px;
+		position: relative;
+		top: 1px;
+	}
+
+	a, .name-divider:before {
+		animation-name: nameFade;
+		animation-duration: 1.3s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
+		-webkit-backface-visibility: hidden;
+	}
+
+
+	@media(max-width: 410px) {
+		padding-top: 30px;
+
+		a, .name-divider {
+			display: block;
+			margin-bottom: .5rem;
+		}
+	}
+}
