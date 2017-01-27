@@ -198,21 +198,16 @@ main {
     opacity: 1; } }
 
 .logo-container {
-  max-width: 280px;
-  margin: 0 auto;
-  height: 70px; }
+  width: 280px;
+  margin: 0 auto; }
   .logo-container svg {
-    overflow: visible; }
-
-#logo {
-  -webkit-transform: scale(2.75);
-      -ms-transform: scale(2.75);
-          transform: scale(2.75); }
+    overflow: visible;
+    display: block; }
 
 #logo-firstname,
 #logo-lastname {
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   -webkit-animation-fill-mode: forwards;
@@ -223,22 +218,22 @@ main {
 #logo-firstname {
   -webkit-animation-name: leftSlide;
           animation-name: leftSlide;
-  -webkit-transform: translateX(-150px);
-      -ms-transform: translateX(-150px);
-          transform: translateX(-150px); }
+  -webkit-transform: translateX(-200px);
+      -ms-transform: translateX(-200px);
+          transform: translateX(-200px); }
 
 #logo-lastname {
   -webkit-animation-name: rightSlide;
           animation-name: rightSlide;
-  -webkit-transform: translateX(150px);
-      -ms-transform: translateX(150px);
-          transform: translateX(150px); }
+  -webkit-transform: translateX(200px);
+      -ms-transform: translateX(200px);
+          transform: translateX(200px); }
 
 #logo-slash {
   -webkit-animation-name: slashSquash;
           animation-name: slashSquash;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   -webkit-animation-fill-mode: forwards;
@@ -273,8 +268,8 @@ main {
   .name-container a, .name-container .name-divider:before {
     -webkit-animation-name: nameFade;
             animation-name: nameFade;
-    -webkit-animation-duration: 1.3s;
-            animation-duration: 1.3s;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
     -webkit-animation-fill-mode: forwards;
