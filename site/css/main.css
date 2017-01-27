@@ -285,4 +285,6 @@ main {
       padding-top: 30px; }
       .name-container a, .name-container .name-divider {
         display: block;
-        margin-bottom: .5rem; } }
+        margin-bottom: .5rem; }
+      .name-container .name-divider:before {
+        top: 0; } }

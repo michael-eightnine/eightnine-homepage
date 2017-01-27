@@ -41,5 +41,9 @@
 			display: block;
 			margin-bottom: .5rem;
 		}
+
+		.name-divider:before {
+			top: 0;
+		}
 	}
 }
