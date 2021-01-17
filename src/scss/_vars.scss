@@ -1,0 +1,16 @@
+$circleAnimationDuration: 2.5s;
+$circleAnimationDelay: 0.5s;
+$cricleAnimationTimingFunction: cubic-bezier(0.33, 1, 0.68, 1);
+
+$slideAnimationDuration: 1s;
+$slideAnimationDelay: $circleAnimationDelay + 0.2s;
+$slideAnimationTimingFunction: cubic-bezier(0.66, -0.43, 0.34, 1.42);
+
+$slashAnimationDuration: 0.5s;
+$slashAnimationDelay: $slideAnimationDuration + $slideAnimationDelay - 0.1s;
+
+$nameAnimationDuration: 0.5s;
+$nameAnimationDelay: $slashAnimationDelay + 0.35s;
+$nameAnimationTimingFunction: cubic-bezier(0.34, 1.56, 0.64, 1);;
+
+$logoWidth: 300px;

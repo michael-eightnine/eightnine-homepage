@@ -1,0 +1,65 @@
+@import-normalize;
+@import './animations';
+@import './vars';
+
+body {
+  margin: 0;
+  font-family: Libre Baskerville, serif;
+  background-color: black; // This is also inlined in index.html to prevent FOUC
+  font-size: 14px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    // &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    // top: calc(50% - 20px);
+    border-radius: 100%;
+    height: 150vw;
+    width: 150vw;
+    animation: circleExpand;
+    background-color: white;
+    animation-duration: $circleAnimationDuration;
+    animation-delay: $circleAnimationDelay;
+    animation-timing-function: $cricleAnimationTimingFunction;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+
+    @media (max-width: 768px) {
+      height: 250vh;
+      width: 250vh;
+    }
+  }
+
+  &__link-bar {
+    width: calc(#{$logoWidth} - 30px);
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: linkSlide;
+    animation-duration: $nameAnimationDuration;
+    animation-delay: $nameAnimationDelay;
+    animation-timing-function: $nameAnimationTimingFunction;
+    animation-fill-mode: forwards;
+    transform: translateY(70px);
+    opacity: 0;
+  }
+
+  &__link-divider {
+    display: block;
+    padding: 2px;
+  }
+}

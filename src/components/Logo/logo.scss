@@ -1,0 +1,38 @@
+@import '../../scss/animations';
+@import '../../scss/vars';
+
+.logo {
+  &__wrapper {
+    width: $logoWidth;
+    svg {
+      overflow: visible;
+      display: block;
+    }
+  }
+  &__left,
+  &__right,
+  &__slash {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  &__left {
+    animation-name: leftSlide;
+    animation-duration: $slideAnimationDuration;
+    animation-delay: $slideAnimationDelay;
+    animation-timing-function: $slideAnimationTimingFunction;
+    transform: translateX(-200px);
+  }
+  &__right {
+    animation-name: rightSlide;
+    animation-duration: $slideAnimationDuration;
+    animation-delay: $slideAnimationDelay;
+    animation-timing-function: $slideAnimationTimingFunction;
+    transform: translateX(200px);
+  }
+  &__slash {
+    animation-name: fadeIn;
+    animation-duration: $slashAnimationDuration;
+    animation-delay: $slashAnimationDelay;
+  }
+}

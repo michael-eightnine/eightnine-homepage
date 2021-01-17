@@ -1,0 +1,56 @@
+@keyframes leftSlide {
+  from {
+    transform: translateX((-200px));
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    transform: translateX((0));
+    opacity: 1;
+    filter: alpha(opacity=1);
+  }
+}
+
+@keyframes rightSlide {
+  from {
+    transform: translateX((200px));
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    transform: translateX((0));
+    opacity: 1;
+    filter: alpha(opacity=1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=1);
+  }
+}
+
+@keyframes circleExpand {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes linkSlide {
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

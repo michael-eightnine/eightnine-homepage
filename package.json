@@ -1,32 +1,38 @@
 {
-  "name": "eight_nine_home",
-  "version": "1.1.0",
-  "description": "eight/nine homepage",
-  "main": "index.js",
+  "name": "eightnine-home",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "craco start",
+    "build": "craco build"
   },
-  "author": "Michael Smith & Joseph Mueller",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.17.3",
-    "del": "^2.2.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-cssnano": "^2.1.0",
-    "gulp-if": "^2.0.1",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-ng-annotate": "^2.0.0",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0",
-    "gulp-useref": "^3.1.2",
-    "ng-annotate": "^1.2.1",
-    "run-sequence": "^1.2.2"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [
-    "portfolio",
-    "front",
-    "end",
-    "front-end"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
