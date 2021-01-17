@@ -7,7 +7,7 @@ import './logo.scss'
  */
 const Logo = () => (
   <div className="logo__wrapper">
-    <svg viewBox="0 0 280 69.79" xmlns="http://www.w3.org/2000/svg">
+    <svg id="logoSvg" viewBox="0 0 280 69.79" xmlns="http://www.w3.org/2000/svg">
       <g className="logo" fill="#111">
         <g className="logo__slash">
           <path d="M167.89 0l-22.53 68.15h-7.69L160.2 0z" />
